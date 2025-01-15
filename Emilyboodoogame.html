@@ -22,14 +22,7 @@
 	let touchingNow = false
 	//END OF mobile device let statements	
  	let enemies = []
-		//mobile device: MOVE FORWARD
-		if (touchingNow == true) {
-			let angle = camera.getAttribute("rotation") 
-			let changeX = 0.25 * Math.sin(angle.y * Math.PI / 180)
-			let changeZ = 0.25 * Math.cos(angle.y * Math.PI / 180) 
-			cameraPos.x -= changeX/4; 
-			cameraPos.z -= changeZ/4; 
-		}
+
 			
 	let scene = document.querySelector("a-scene")
 	let camera = document.querySelector("a-camera")
@@ -150,11 +143,13 @@
 		}
 		
 
-		if (coins.every(coin => coin.collected==true)) {
-		    cameraFinalX = cameraPos.x
-		    cameraFinalZ = cameraPos.z
-		    game_over()
-		    return
+		//mobile device: MOVE FORWARD
+		if (touchingNow == true) {
+			let angle = camera.getAttribute("rotation") 
+			let changeX = 0.25 * Math.sin(angle.y * Math.PI / 180)
+			let changeZ = 0.25 * Math.cos(angle.y * Math.PI / 180) 
+			cameraPos.x -= changeX/4; 
+			cameraPos.z -= changeZ/4; 
 		}
 
 
