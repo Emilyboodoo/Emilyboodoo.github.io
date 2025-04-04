@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Mystery+Quest&family=Pacifico&family=Princess+Sofia&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Pacifico&family=Princess+Sofia&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Mystery+Quest&family=Oswald:wght@200..700&family=Pacifico&family=Princess+Sofia&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #59B6BE;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: "Princess Sofia", cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #7676D1;
+  margin: 60px 0 0 0;
+}
+h2 {
+   font-family: "Exo 2", sans-serif;
+  text-align: center;
+  color: #255B26;
+  margin: 0px 0 70px 0;
+}
+p {
+  font-family: "Oswald", sans-serif;
+  color: rgba(39, 129, 245, 1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(160, 46, 60, 0.8), rgba(160, 46, 60, 0.8));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://bonnibakery.com/wp-content/uploads/2021/01/ChocolateCake-2-scaled.jpg");
+  height: 400px
+}
+.second{
+  background-image: url("https://suncorefoods.com/cdn/shop/articles/SUNCORE_FOODS_RAINBOW_CELEBRATION_MACAROONS_large.jpg?v=1693963685");
+  height: 400px
+}
+.dessert{
+  background-image: url("https://sallysbakingaddiction.com/wp-content/uploads/2017/06/moist-chocolate-cupcakes-5.jpg");
+  height: 400px
+}  
+.cookie{
+    background-image: 
+url("https://static01.nyt.com/images/2018/11/20/dining/ar-sugar-cookies/ar-sugar-cookies-superJumbo.jpg");
+    height: 400px
+  
+}
+.price {
+  float: right;
+}
+input {
+	font-size: 22px;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Emily's bakery</h1>
+<h2>a sweet tooth</h2>
+<div class="first">
+	 <input class="quantities" type="number" min="0" style="width: 50px">
+  <p>chocolate cake <span class="price">$25</span><br />
+  <small>Chocolate cake or chocolate gâteau (from French: gâteau au chocolat) is a cake flavored with melted chocolate, cocoa powder, or both. It can also have other ingredients such as fudge, vanilla creme, and other sweeteners.[1]. </small></p>
+</div>
+
+<div class="second">
+	 <input class="quantities" type="number" min="0" style="width: 50px">
+  <p>rainbow macaroons<span class="price">$20</span><br />
+  <small>A macaroon (/ˌmækəˈruːn/ MAK-ə-ROON) is a small cake or cookie, originally made from ground almonds, egg whites, and sugar,[1] but now often with coconut or other nuts. They may also include jam, chocolate, or other flavorings.[2].</small></p>
+</div>
+  
+<div class="dessert">
+	 <input  class="quantities" type="number" min="0" style="width: 50px">
+  <p>sprinkle party <span class="price">$5</span><br />
+  <small>A cupcake (AmE, CanE), fairy cake (BrE), or bun (IrE) is a small cake designed to serve one person, which may be baked in a small thin paper or aluminum cup. As with larger cakes, frosting and other cake decorations such as fruit and candy may be applied..</small></p>
+ </div>
+
+<div class="cookie">
+	 <input  class="quantities" type="number" min="0" style="width: 50px">
+<p>suger cookies <span class="price">$10</span><br />
+<small>A cookie or biscuit is a baked snack or dessert that is typically small, flat, and sweet. It usually contains flour, sugar, egg, and some type of oil, fat, or butter. It may include other ingredients such as raisins, oats, chocolate chips, or nuts..</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+  <br><br>
+ <input id="Name" placeholder="username">
+ <input id="Email" placeholder="Your email">
+ <input id="submit" input type="submit">
+ <br><br>
+ <script type="module">
+   // Import the functions you need from the SDKs you need
+   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+   import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+   
+   // TODO: Add SDKs for Firebase products that you want to use
+   // https://firebase.google.com/docs/web/setup#available-libraries
+
+   // Your web app's Firebase configuration
+   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+   const firebaseConfig = {
+     apiKey: "AIzaSyBG7OxPA65p8o2t-RMRXz5L_4fo5k2Xsg8",
+     authDomain: "emily3333-9d51f.firebaseapp.com",
+     projectId: "emily3333-9d51f",
+     storageBucket: "emily3333-9d51f.firebasestorage.app",
+     messagingSenderId: "502029541675",
+     appId: "1:502029541675:web:6f0ae554e3100407e0256e",
+     measurementId: "G-67RWJR8XMW"
+   };
+
+   // Initialize Firebase
+   const app = initializeApp(firebaseConfig);
+
+   const db = getDatabase(app);
+
+   const Name = document.querySelector("#Name") 
+   const Email = document.querySelector("#Email")
+   const quantities = document.querySelectorAll(".quantities") 
+   const itemsList = ["choclate cake", "rainbow macaroons", "sprinkle party"]
+   const prices = document.querySelectorAll(".price")
+   document.querySelector('#submit').addEventListener('click', Submit)
+  
+     function Submit() {
+     	  const timestamp = buildTimestamp()
+	 	let cart = { }
+		let total = 0
+
+	 	for  (let i=0; i<quantities.length; i=i+1) {
+	 	  if (quantities[i].value != "0" && quantities[i].value != "") {	
+	 	    cart[itemsList[i]] = parseInt(quantities[i].value) 
+		let price = prices[i].innerHTML.replace('$', '')
+		total = total + quantities[i].value * price 
+			  
+	 	  }
+	 	  quantities[i].value = ""
+	 	}
+	      
+
+		 
+	  
+     	  set(ref(db, timestamp), {
+     		  Name: Name.value,
+     	      email: Email.value,
+			  cart: cart,
+      		  totalPrice: total,
+      		  paid: "not yet",
+			  
+     	  });
+
+     	  Name.value = ""
+     	  Email.value = ""
+     	}
+
+   	function buildTimestamp() {
+   		  const now = new Date();
+   		  let timestamp = now.getFullYear().toString() + "/";
+   		  //const month = now.toLocaleString('default', { month: 'long' });
+
+   		  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+   		  month = month.toString()
+   		  month = addLeadingZero(month)
+   		  timestamp += month + "/"; 
+
+   		  let date = now.getDate().toString()
+   		  date = addLeadingZero(date)
+   		  timestamp += date + "/";
+
+   		  let hours = now.getHours().toString()
+   		  hours = addLeadingZero(hours)
+   		  timestamp += hours + ":";
+
+   		  let minutes = now.getMinutes().toString()
+   		  minutes = addLeadingZero(minutes)
+   		  timestamp += minutes + ":";
+
+   		  let seconds = now.getSeconds().toString()
+   		  seconds = addLeadingZero(seconds)
+   		  timestamp += seconds;
+  
+   		  return timestamp
+   		}
+	
+   		function addLeadingZero(units) {
+   			if (units.length < 2) {
+   				units = "0" + units
+   			}
+   			return units
+   		}
+  
+   
+ </script>
+   
+
+</body>
